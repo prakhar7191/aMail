@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<title>Compose</title>
+	<style>
+	span{
+	color:gray;
+	font-family:verdana;
+	padding:15px;
+	}
+	input[type=text]{
+	outline:none;
+	border:none;
+	width:85%;
+	font-family:Arial;
+	font-size:20px;
+	}
+	textarea{
+	width:100%;
+	height:300px;
+	display:block;
+	font-family:Arial;
+	font-size:20px;
+	}
+	button{
+	width:20%;
+	height:50px;
+	color:black;
+	}
+	button:hover{
+	background-color:black;
+	color:white;
+	border:3px solid darkorange;
+	}
+	#btns
+	{
+	display:inline;
+	text-align:center;
+	}
+	form{
+	display:inline;
+	}
+	</style>
+</head>
+
+<body>
+	<h1 style="text-align:center;text-decoration:underline;"><i>COMPOSE</i></h1>
+	<form action="message" method="post">
+		<hr>
+		<span><b>To:</b></span><input type="text" name="to"><br><hr><br>
+		<span><b>Subject:</b></span><input type="text" name="subject">
+		<br><hr><br>
+		<label for="upload">
+  			<textarea name="message">
+			</textarea>
+  			<input type="file" id="upload" multiple>
+			</label>
+			<br><hr><br>
+		<div id="btns">
+		<button type="submit" name="btn" value="send">Send</button>
+		<button type="submit" name="btn" value="Draft">Save As Draft</button>
+		<button type="button" value="attach">Attach</button>
+		</div>	
+	</form>
+	
+</body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student ID Form</title>
+		<!-- <script>
+			function aud_play_pause() {
+  			var myAudio = document.getElementById("myAudio");
+  			if(myAudio.paused) {
+  				myAudio.play();
+  			} 
+  			else{
+    			myAudio.pause();
+  				}
+			}
+		</script>-->
+		<style>
+			body{
+		    background-image:url('signup.jpg');
+			background-size:100%;
+			background-repeat: repeat-y;
+			background-attachment: fixed;
+			height:100%;
+			width:100%;
+			}
+			h1{
+			text-align:center;
+			color:white;
+			padding:20px;
+			font-family:verdana;
+			background-color:black;
+			}
+			fieldset{
+			color:white;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<embed name="backgroundSong" src="signup.mp3" loop="True" hidden="true" autostart="true" id="myAudio"></embed>
+		<!--<button type="button" onclick="aud_play_pause()">Play/Pause</button>-->
+		<form action="prakhar" method="post" ><!-- when we will submt the form this layout.html page will open ; request will go from browser to this page-->
+			<h1>Set Login Credentials</h1>
+			<fieldset>
+			<legend style="color:white">Login Credentials</legend>
+			<div>Mail ID:</div><input type="email" name="emailID" required><br>
+			<div>Password:</div><input type="password" name="pwd" required><br>
+			<div>Confirm Password:</div><input type="password" name="cpwd" required><br>
+			</fieldset>
+			<br><p align="center">
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+			</p><br><br><hr>
+		</form>
+	</body>
+</html>
