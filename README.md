@@ -1,5 +1,5 @@
 # aMail
-Auburn Mail
+Auburn Mail.\n
 This project is a web application implementing an e-mail system. The server side coding is done using advanced java concepts like servlets,jsp,struts and jdbc.
 This e-mail system finds its way different from others with some out of the box features. It not only has the basic necessary features of a mailing system like - compose,inbox,sent items,draft messages ,trash ,reply, user information,security changes,edit profile,search options,etc. but also have some advanced features like the following:-
 1.A sent mail is marked as delivered/read based on whether the person(recepient of the mail) has read it or not.If he had read it the table column of status of sent mail will turn green from red(which indicated delivered mail)
